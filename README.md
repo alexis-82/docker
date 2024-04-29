@@ -74,3 +74,81 @@ docker run -it --name myapp.container -p 3200:3200 myapp
 
 
 ---
+
+# Docker Documentation
+
+## Project Description
+
+In this project, we use Docker to manage our containers and images. Docker is an open-source platform that simplifies the creation, distribution, and execution of applications within containers.
+
+## Key Docker Commands
+
+Here are some of the key Docker commands that might be useful:
+
+- `docker run`: Starts a container based on an image.
+- `docker build`: Builds an image from a Dockerfile.
+- `docker pull`: Downloads an image from Docker Hub or a custom registry.
+- `docker push`: Uploads an image to Docker Hub or a custom registry.
+- `docker images`: Displays a list of images present in the system.
+- `docker ps`: Shows the list of running containers, -a to display all.
+- `docker exec`: Executes a command within a running container.
+- `docker images --filter=since=ID`: Displays the list of direct or indirect child images.
+- `docker image rmi -f ID`: Forced deletion of the image.
+
+## Procedure for Creating Image with Container
+⚠️ Python3 with pip must be installed beforehand.
+
+Install virtualenv
+```
+pip install virtualenv
+```
+Activate the environment env
+For Linux:
+```
+cd venv/bin
+source activate
+```
+For Windows 10/11:
+```
+cd venv
+./Script/activate
+```
+Enter venv environment in Linux:
+```
+virtualenv venv
+```
+Enter venv environment in Windows:
+```
+python -m virtualenv venv
+```
+Install Flask
+```
+pip install flask
+```
+Generate the requirements.txt file directly from venv
+```
+pip freeze > requirements.txt
+```
+Check if the app.py code works, we can also use nodemon:
+```
+python3 app.py
+```
+or
+```
+nodemon app.py
+```
+
+Build our image by reading the Dockerfile:
+```
+docker build -t myapp .
+```
+Now we can start our image with the container using the command:
+```
+docker run -it --name myapp.container -p 3200:3200 myapp
+```
+
+myapp.container = we can give any name to our container
+
+
+
+
