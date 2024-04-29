@@ -61,8 +61,6 @@ oppure
 ```
 nodemon app.py
 ```
-- 
-
 Costruiamo la nostra immagine tramite la lettura del file Dockerfile:
 ```
 docker build -t myapp .
@@ -105,7 +103,7 @@ Install virtualenv
 pip install virtualenv
 ```
 Activate the environment env
-For Linux:
+for Linux:
 ```
 cd venv/bin
 source activate
@@ -139,7 +137,6 @@ or
 ```
 nodemon app.py
 ```
-
 Build our image by reading the Dockerfile:
 ```
 docker build -t myapp .
@@ -148,7 +145,6 @@ Now we can start our image with the container using the command:
 ```
 docker run -it --name myapp.container -p 3200:3200 myapp
 ```
-
 myapp.container = we can give any name to our container
 
 
