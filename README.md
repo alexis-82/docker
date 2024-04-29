@@ -26,8 +26,7 @@ Installiamo virtualenv
 ```
 pip install virtualenv
 ```
-Attiviamo l'ambiente env
-Per Linux:
+Attiviamo l'ambiente env per Linux:
 ```
 cd venv/bin
 source activate
@@ -102,8 +101,7 @@ Install virtualenv
 ```
 pip install virtualenv
 ```
-Activate the environment env
-for Linux:
+Activate the environment env for Linux:
 ```
 cd venv/bin
 source activate
