@@ -11,6 +11,10 @@ def hello_world():
     # return "<h1 style='color:red'> This is Home!</h1>"
     return render_template('index.html')
 
+@app.route('/temp')
+def temp():
+    return <h1 style='color:red'> This is TEMP!</h1>
+
 if __name__ == "__main__":
     print("Server running in port %s"%(PORT))
     app.run(host='0.0.0.0', port = PORT)
