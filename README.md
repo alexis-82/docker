@@ -9,7 +9,7 @@ In questo progetto, utilizziamo Docker per gestire i nostri contenitori e le nos
 
 Ecco alcuni dei comandi principali di Docker che potrebbero esserti utili:
 
-- `docker run`: Avvia un contenitore partendo da un'immagine.
+- `docker run`: Avvia o aggiorna un contenitore partendo da un'immagine.
 - `docker build`: Costruisce un'immagine da un Dockerfile.
 - `docker pull`: Scarica un'immagine da Docker Hub o da un registro personalizzato.
 - `docker push`: Carica un'immagine su Docker Hub o su un registro personalizzato.
@@ -18,6 +18,17 @@ Ecco alcuni dei comandi principali di Docker che potrebbero esserti utili:
 - `docker exec`: Esegue un comando all'interno di un contenitore in esecuzione.
 - `docker images --filter=since=ID`: Mostra l'elenco delle immagini figlie dirette o indirette
 - `docker image rmi -f ID`: Eliminazione forzata dell'immagine
+- `docker container ls`: Visualizza la lista dei container
+- `docker exec -it $nomeContainer /bin/sh`: Entriamo in modalità interattiva, cioè in shell, nel container
+
+## Comandi completi di esempio
+- `docker build -t $nomeImmagine .`: Costruzione dell'immagine, il . indica il percorso del file Dockerfile
+- `docker run --rm --name $nomeContainer -it $nomeImmagine`: Avviamo il container in un immagine, --rm rimuove il container una volta finito e -it sta per interattivo
+- `docker run --rm --name $nomeContainer -it -e myKey=pippo $nomeImmagine`: Con il flag -e specifichiamo una variabile, molto utile per i database
+- `docker build -t $nomeContainer .`: Oltre a costruire aggiorna anche il container se modifichiamo il file Dockerfile
+- `docker run --rm --name $nomeContainer -it -p 3001:3000 $nomeImmagine`: Con il flag -p specifichiamo le porte host:container (dal browser porta 3001)
+
+
 
 ## Procedura creazione immagine con container
 ⚠️ Bisogna avere già installato python3 con pip
