@@ -24,7 +24,7 @@ Ecco alcuni dei comandi principali di Docker che potrebbero esserti utili:
 - `docker build -t $nomeImmagine .`: Costruzione dell'immagine, il . indica il percorso del file Dockerfile
 - `docker run --rm --name $nomeContainer -it $nomeImmagine`: Avviamo il container in un immagine, --rm rimuove il container una volta finito e -it sta per interattivo
 - `docker run --rm --name $nomeContainer -it -e myKey=pippo $nomeImmagine`: Con il flag -e specifichiamo una variabile, molto utile per i database
-- `docker build -t $nomeContainer .`: Oltre a costruire aggiorna anche il container se modifichiamo il file Dockerfile
+- `docker build -t $nomeImmagine .`: Oltre a costruire aggiorna anche il container se modifichiamo il file Dockerfile
 - `docker run --rm --name $nomeContainer -it -p 3001:3000 $nomeImmagine`: Con il flag -p specifichiamo le porte host:container (dal browser porta 3001)
 - `docker exec -it $nomeContainer /bin/sh`: Entriamo in modalità interattiva, cioè in shell, nel container
 
@@ -104,6 +104,15 @@ Here are some of the key Docker commands that might be useful:
 - `docker exec`: Executes a command within a running container.
 - `docker images --filter=since=ID`: Displays the list of direct or indirect child images.
 - `docker image rmi -f ID`: Forced deletion of the image.
+- `docker container ls`: Displays the list of containers.
+
+## Complete example commands
+- `docker build -t $imageName .`: Builds the image, where the period indicates the path to the Dockerfile.
+- `docker run --rm --name $containerName -it $imageName`: Launches the container from an image, where --rm removes the container once it finishes, and -it stands for interactive.
+- `docker run --rm --name $containerName -it -e myKey=pippo $imageName`: Specifies a variable with the -e flag, which is very useful for databases.
+- `docker build -t $imageName .`: Besides building, it also updates the container if we modify the Dockerfile.
+- `docker run --rm --name $containerName -it -p 3001:3000 $imageName`: Specifies the host:container ports with the -p flag (port 3001 from the browser).
+- `docker exec -it $containerName /bin/sh`: Enters interactive mode, i.e., shell, within the container.
 
 ## Procedure for Creating Image with Container
 ⚠️ Python3 with pip must be installed beforehand.
