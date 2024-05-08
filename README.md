@@ -16,10 +16,10 @@ Ecco alcuni dei comandi principali di Docker che potrebbero esserti utili:
 - `docker images`: Visualizza l'elenco delle immagini presenti nel sistema.
 - `docker ps`: Mostra l'elenco dei contenitori in esecuzione, -a per visualizzarli tutti.
 - `docker exec`: Esegue un comando all'interno di un contenitore in esecuzione.
-- `docker images --filter=since=ID`: Mostra l'elenco delle immagini figlie dirette o indirette
-- `docker image rmi -f ID`: Eliminazione forzata dell'immagine
-- `docker container ls`: Visualizza la lista dei container
-- `docker container rm ID`: Eliminazione del container
+- `docker images --filter=since=ID`: Mostra l'elenco delle immagini figlie dirette o indirette.
+- `docker image rmi -f ID`: Eliminazione forzata dell'immagine.
+- `docker container ls`: Visualizza la lista dei container.
+- `docker container rm ID`: Eliminazione del container.
 
 ## Comandi completi di esempio
 - `docker build -t $nomeImmagine .`: Costruzione dell'immagine, il . indica il percorso del file Dockerfile
@@ -106,6 +106,7 @@ Here are some of the key Docker commands that might be useful:
 - `docker images --filter=since=ID`: Displays the list of direct or indirect child images.
 - `docker image rmi -f ID`: Forced deletion of the image.
 - `docker container ls`: Displays the list of containers.
+- `docker container rm ID`: Deleting the container.
 
 ## Complete example commands
 - `docker build -t $imageName .`: Builds the image, where the period indicates the path to the Dockerfile.
