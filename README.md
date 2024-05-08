@@ -19,6 +19,7 @@ Ecco alcuni dei comandi principali di Docker che potrebbero esserti utili:
 - `docker images --filter=since=ID`: Mostra l'elenco delle immagini figlie dirette o indirette
 - `docker image rmi -f ID`: Eliminazione forzata dell'immagine
 - `docker container ls`: Visualizza la lista dei container
+- `docker container rm ID`: Eliminazione del container
 
 ## Comandi completi di esempio
 - `docker build -t $nomeImmagine .`: Costruzione dell'immagine, il . indica il percorso del file Dockerfile
