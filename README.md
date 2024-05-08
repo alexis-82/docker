@@ -34,9 +34,17 @@ Ecco alcuni dei comandi principali di Docker che potrebbero esserti utili:
 ## Procedura creazione immagine con container
 ⚠️ Bisogna avere già installato python3 con pip
 
-Installiamo virtualenv
+Installiamo virtualenv:
 ```
 pip install virtualenv
+```
+Entrare in ambiente venv in Linux:
+```
+virtualenv venv
+```
+Entrare in ambiente venv in Windows:
+```
+python -m virtualenv venv
 ```
 Attiviamo l'ambiente env per Linux:
 ```
@@ -48,19 +56,11 @@ Per Windows10/11:
 cd venv
 ./Script/activate
 ```
-Entrare in ambiente venv in Linux:
-```
-virtualenv venv
-```
-Entrare in ambiente venv in Windows:
-```
-python -m virtualenv venv
-```
-Installazione di Flask
+Installazione di Flask:
 ```
 pip install flask
 ```
-Generiamo il file requirements.txt direttamente dal venv
+Generiamo il file requirements.txt direttamente dal venv:
 ```
 pip freeze > requirements.txt
 ```
@@ -118,9 +118,17 @@ Here are some of the key Docker commands that might be useful:
 ## Procedure for Creating Image with Container
 ⚠️ Python3 with pip must be installed beforehand.
 
-Install virtualenv
+Install virtualenv:
 ```
 pip install virtualenv
+```
+Enter venv environment in Linux:
+```
+virtualenv venv
+```
+Enter venv environment in Windows:
+```
+python -m virtualenv venv
 ```
 Activate the environment env for Linux:
 ```
@@ -132,19 +140,12 @@ For Windows 10/11:
 cd venv
 ./Script/activate
 ```
-Enter venv environment in Linux:
-```
-virtualenv venv
-```
-Enter venv environment in Windows:
-```
-python -m virtualenv venv
-```
-Install Flask
+
+Install Flask:
 ```
 pip install flask
 ```
-Generate the requirements.txt file directly from venv
+Generate the requirements.txt file directly from venv:
 ```
 pip freeze > requirements.txt
 ```
