@@ -59,7 +59,7 @@ python -m virtualenv venv
 ```
 Attiviamo l'ambiente env per Linux:
 ```
-cd venv/bin
+cd venv/local/bin
 source activate
 ```
 Per Windows10/11:
